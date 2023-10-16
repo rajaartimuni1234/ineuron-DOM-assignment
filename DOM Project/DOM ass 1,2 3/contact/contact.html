@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio Websites- Contact</title>
+
+    <!-- font awesome kit link -->
+    <script
+      src="https://kit.fontawesome.com/6ebb309f55.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- poppin font from the google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding the css file to html document -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+      <!-- Header Portion -->
+      <header>
+        <!-- Creating the Navigation Menu -->
+        <nav>
+          <!-- Logo Area -->
+          <div class="logo">LOGO</div>
+  
+          <!-- Navigation Links -->
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+  
+          <!-- Search Area -->
+          <div class="search-field">
+            <input type="text" placeholder="Search" />
+            <button>Search</button>
+          </div>
+        </nav>
+      </header>
+
+      <!---creating the main content area-->
+
+      <main class="mainWrapper">
+        
+<!---create left div for showing the submited area-->
+        <div class="mainleft">
+            <h2>user Output Board</h2>
+            <form  class="mainLeftDetails">
+              <input type="text" class="userName" name="username"  placeholder="User Enter Name">  
+              <input type="text " class="enterMail" name="useremail"  placeholder="User Entered Email">
+              <textarea name="message" class="message"  placeholder="User Entered Message"></textarea>
+              <button type="submit">Sumbit</button>
+
+            </form>
+        </div>
+
+        <!--create right div for accpeting the user input through the form--->
+
+        <div class="mainRight">
+            <h2>User Input Board </h2>
+
+            <form  class="mainRightDetails">
+                <input type="text" class="userName" name="username" readonly placeholder="User Enter Name">  
+                <input type="text " class="enterMail" name="useremail" readonly placeholder="User Entered Email">
+                <textarea name="message" class="message" readonly placeholder="User Entered Message"></textarea>
+                <button type="reset">Reset</button>
+              </form>
+
+        </div>
+      </main>
+
+      <script>
+     /*let left=document.querySelector('.mainLeftDetails')
+     let Right=document.querySelector('.mainLeftDetails')
+    left.addEventListener('submit', (e)=>{
+        e.preventDefault()
+        console.log( e.preventDefault())
+        const name=left.username.value;
+        const email=left.useremail.value;
+        const message=left.message.value;
+        console.log(name)
+
+        Right.username.value=name;
+        Right.useremail.value=email;
+        Right.message.value=message;
+
+        form.reset()
+    
+    })*/
+    let form=document.querySelector('.mainLeftDetails')
+const showForm = document.querySelector('.mainLeftDetails')
+form.addEventListener('input', (e) => {
+e.preventDefault();
+const name = form.username.value
+const email=form.useremail.value
+const message=form.message.value
+console.log(name)
+
+showForm.username.value=name
+showForm.useremail.value=email
+showForm.message.value=message
+form.reset()
+} )
+      </script>
+</body>
+</html>

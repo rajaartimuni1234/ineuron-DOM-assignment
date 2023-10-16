@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(234, 229, 223);
+}
+
+.nav{
+display: flex;
+padding: 10px 0;
+
+margin: auto;
+width: 80%;
+
+justify-content: flex-start;
+gap: 5rem;
+align-items: center;
+
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap:3rem;
+}
+
+.hero{
+   display: flex;
+    width: 80%;
+   justify-content: space-between;
+    margin: 80px auto;
+   
+    gap:8rem;
+
+}
+.header{
+
+    
+    
+}
+.left-side{
+    width: 40%;
+    align-items: center;
+    margin: auto;
+}
+.right-side{
+  width: 60%;  
+ 
+}
+
+.heading{
+    font-size:30px ;
+
+}
+.pargarph{
+    margin:20px 2px;
+}
+.btn{
+   background-color: rgb(47, 93, 47); 
+   border-style: none;
+   color: white;
+   padding: 10px 15px;
+   border-radius: 7px;
+}

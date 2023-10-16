@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link area-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <title>Portfolio Website</title>
+
+    <!--font awsome link-->
+    <script src="https://kit.fontawesome.com/a13ee94394.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!---Header Portion-->
+    <header>
+        <nav>
+
+            <!--logo area-->
+            <div class="logo">LOGO</div>
+
+            <!--navigation Link-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about/about.html">About</a></li>
+                <li><a href="contact/con\.html">Contact</a></li>
+
+            </ul>
+
+            <!--search Area-->
+            <div class="search-field">
+                <input type="text" placeholder="search">
+                <button>Search</button>
+            </div>
+
+        </nav>
+        <!---end of nav section-->
+
+        <!--hero section-->
+    </header>
+     <!--hero section-->
+     <section class="hero-section">
+        <!--left div for detail-->
+        <div class="hereo-left-section">
+        <h1>Hello, I am a <span>Web Developer</span></h1>
+        <p>
+          I am an aspiring <span>Full Stack JavaScript Developer</span>,
+          <br />who is currently working as <span>a Freelancer</span> for <br />
+          <span>National and International Client</span>.
+        </p>
+    </div>
+
+    <!---Right Div for Imagee and Button-->
+    <div class="hero-right-section">
+        <img src="/avtar.png" alt="">
+        <div class="hero-right-section-btn">
+            <button>Chat With Me</button>
+        </div>
+    </div>
+     </section>
+
+     <!---footer-->
+<footer>
+     <p>Copyright @  2022 Harvi. All rights reserved</p>
+
+     <!--adding all the social media icons-->
+     <ul>
+        <li>
+          <a href="/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+   let nav=document.querySelector('ul')
+let contact=document.querySelector('ul').lastElementChild
+nav.removeChild(contact)
+  let li=document.createElement("li")
+  let a=document.createElement("a");
+   a.textContent="Projects"
+   li.append(a)
+
+   let li1=document.createElement("li")
+  let a1=document.createElement("a");
+   a1.textContent="Hire Me"
+   li1.append(a1)
+   nav.append(li,li1)
+   //taslk2
+          nav.removeChild(li1) 
+  
+        
+       
+      
+       //task 3
+       let paragraph=document.querySelectorAll('.hereo-left-section p span')
+       let n= paragraph.length
+       console.log(n)
+       for (let i=0; i<n;i++){
+        let paraspan=paragraph[1]
+        paraspan.textContent="an employee"
+       }
+
+       //task4
+
+       let photo= document.querySelector('.hero-right-section').firstElementChild
+       photo.src='https://images.pexels.com/photos/2913125/pexels-photo-2913125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+
+       //task4
+       let buttonbox=document.querySelector(".hero-right-section-btn")
+       let button=document.createElement("button")
+       button.textContent='Support Me'
+       buttonbox.append(button)
+    </script>
+</body>
+
+</html>

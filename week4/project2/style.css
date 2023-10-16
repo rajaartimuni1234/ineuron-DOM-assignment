@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    background-color: #f0f4f5;
+    margin: auto;
+  
+}
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type:none;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 2rem;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    gap: 50px;
+    width: 90%;
+}
+.leftsection{
+   
+    margin-left: 10%;
+    position: relative;
+    width: 50%;
+}
+.leftsection h1{
+    font-size: 65px;
+}
+.leftsection p{
+    margin: 20px 0;
+    color:rgb(167, 161, 161);
+}
+.topangle{
+    width: 25px;
+}
+.bottomangle{
+   position: absolute;
+   right:60px;
+    width: 25px;
+    
+}
+.greenbox{
+    width: 35%;
+    position: absolute;
+    right: 0;
+  bottom: 30px;
+}
+.yellowbox{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    bottom: 50px;
+}
+.doctor{
+    width: 35%;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.stethoscope{
+    position:absolute;
+   top: -200px;
+  right: -30%;
+}
+.btn{
+    border-style: none;
+    padding: 10px 30px;
+    color: #f4f3f3;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight:600 ;
+    background-color: rgb(39, 116, 4);
+}
+.mouse{
+    position: absolute;
+    bottom:-100px;
+    right: -10px;
+    width: 50px;
+    
+}
